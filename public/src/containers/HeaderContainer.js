@@ -13,15 +13,15 @@ function mapStateToProps(state) {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-  	 onDeleteClick: () => {
-    	dispatch(deletePost(ownProps.postId))
-      	.then((response) => {
-            !response.error ? dispatch(deletePostSuccess(response.payload.data)) : dispatch(deletePostFailure(response.payload.data));
-          });
-  	 },
-     resetMe: () =>{
-        dispatch(resetDeletedPost());
-     }
+    onDeleteClick: () => {
+      dispatch(deletePost(ownProps.postId))
+      .then((response) => {
+        !response.error ? dispatch(deletePostSuccess(response.payload.data)) : dispatch(deletePostFailure(response.payload.data));
+      });
+    },
+    resetMe: () => {
+      dispatch(resetDeletedPost());
+    }
   }
 }
 
