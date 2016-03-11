@@ -10,16 +10,16 @@ function mapStateToProps(globalState, ownProps) {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-  	 fetchPost: (id) => {
-    	dispatch(fetchPost(id))
-      	.then((data) => 
-          {
-          	!data.error ? dispatch(fetchPostSuccess(data.payload)) : dispatch(fetchPostFailure(data.payload));
-          }) 
-  	 },
-     resetMe: () =>{
-        dispatch(resetActivePost());
-     }
+    fetchPost: (id) => {
+      dispatch(fetchPost(id))
+      .then((data) =>
+      {
+        !data.error ? dispatch(fetchPostSuccess(data.payload)) : dispatch(fetchPostFailure(data.payload));
+      })
+    },
+    resetMe: () => {
+      dispatch(resetActivePost());
+    }
   }
 }
 

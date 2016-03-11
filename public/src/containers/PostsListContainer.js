@@ -5,9 +5,9 @@ import PostsList from '../components/PostsList';
 
 
 const mapStateToProps = (state) => {
-  return { 
+  return {
     posts: state.posts.postsList.posts,
-    loading: state.posts.postsList.loading 
+    loading: state.posts.postsList.loading
   };
 }
 
@@ -15,9 +15,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     fetchPosts: () => {
       dispatch(fetchPosts()).then((response) => {
-      		let data = response.payload.data ? response.payload.data : {data: 'Network Error'};
-            !response.error ? dispatch(fetchPostsSuccess(data)) : dispatch(fetchPostsFailure(data));
-          });
+        let data = response.payload.data ? response.payload.data : {data: 'Network Error'};
+        !response.error ? dispatch(fetchPostsSuccess(data)) : dispatch(fetchPostsFailure(data));
+      });
     }
   }
 }

@@ -7,12 +7,12 @@ class PostsList extends Component {
   }
 
   renderCategories(categories) {
-     return categories.map((c) => {
-        c = c.trim();
-        return (
-          <Link to={"filter/" + c} key={c} className="list-group-item-text">{" " + c + " "}</Link>
-        );
-     });
+    return categories.map((c) => {
+      c = c.trim();
+      return (
+        <Link to={"filter/" + c} key={c} className="list-group-item-text">{" " + c + " "}</Link>
+      );
+    });
   }
 
   renderPosts(posts) {
@@ -22,7 +22,7 @@ class PostsList extends Component {
           <Link style={{color:'black'}} to={"posts/" + post._id}>
             <h3 className="list-group-item-heading">{post.title}</h3>
           </Link>
-            {this.renderCategories(post.categories)}
+          {this.renderCategories(post.categories)}
         </li>
       );
     });
@@ -30,7 +30,7 @@ class PostsList extends Component {
 
   render() {
     if(this.props.loading) {
-      return <div><h1>Posts</h1><h3>Loading...</h3></div>      
+      return <div><h1>Posts</h1><h3>Loading...</h3></div>
     }
 
     return (
@@ -43,6 +43,5 @@ class PostsList extends Component {
     );
   }
 }
-
 
 export default PostsList;

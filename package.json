@@ -31,9 +31,6 @@
     "mongoose-timestamp": "^0.5.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-
-
-    
     "axios": "^0.9.0",
     "babel-preset-stage-1": "^6.1.18",
     "lodash": "^3.10.1",

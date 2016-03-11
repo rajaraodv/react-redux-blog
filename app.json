@@ -1,15 +1,15 @@
 {
-  "name": "React Redux Blog CRUD app",
-  "description": "A sample Blog app that shows how to build React Redux CRUD app",
-  "repository": "https://github.com/rajaraodv/react-redux-blog",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "React", "React.js", "React", "Redux", "JavaScript", "MongoDB"],
-  "image": "heroku/nodejs",
-  "env": {
-  	"NODE_ENV": {
-  		"description": "Node environment",
-  		"value": "production"
-  	}
-  },
-  "addons": ["mongolab"]
+	"name": "React Redux Blog CRUD app",
+	"description": "A sample Blog app that shows how to build React Redux CRUD app",
+	"repository": "https://github.com/rajaraodv/react-redux-blog",
+	"logo": "http://node-js-sample.herokuapp.com/node.svg",
+	"keywords": ["node", "express", "React", "React.js", "React", "Redux", "JavaScript", "MongoDB"],
+	"image": "heroku/nodejs",
+	"env": {
+		"NODE_ENV": {
+			"description": "Node environment",
+			"value": "production"
+		}
+	},
+	"addons": ["mongolab"]
 }

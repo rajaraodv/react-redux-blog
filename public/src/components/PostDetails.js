@@ -11,7 +11,7 @@ class PostDetails extends Component {
   componentWillMount() {
     //Important! If your component is navigating based on some global state(from say componentWillReceiveProps)
     //always reset that global state back to null when you REMOUNT
-     this.props.resetMe();
+    this.props.resetMe();
   }
 
   componentDidMount() {
@@ -22,7 +22,7 @@ class PostDetails extends Component {
     if(nextProps.activePost.error) {
       alert('No such post');
       this.context.router.push('/');
-    } 
+    }
   }
 
   render() {
