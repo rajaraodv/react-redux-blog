@@ -1,5 +1,6 @@
 
 module.exports = {
+  mode:  "development",
   entry: [
     './public/src/index.js'
   ],
@@ -10,13 +11,14 @@ module.exports = {
   },
   devtool: "eval",
   module: {
-    loaders: [{
+    rules: [{
       exclude: /node_modules/,
-      loader: 'babel'
+      use:
+      { loader: 'babel-loader' }
     }]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
     "alias": {
       "react": "preact-compat",
       "react-dom": "preact-compat"
