@@ -35,7 +35,7 @@
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.1.0",
     "lodash": "^4.17.2",
-    "mongoose": "^4.7.1",
+    "mongoose": "^5.2.6",
     "mongoose-timestamp": "^0.6.0",
     "morgan": "~1.9.0",
     "postmark": "^1.3.1",
