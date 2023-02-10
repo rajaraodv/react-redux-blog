@@ -4,10 +4,10 @@
 
 <img src='https://david-dm.org/rajaraodv/react-redux-blog.svg' />
 
-#Live App
+# Live App
 https://protected-escarpment-79486.herokuapp.com/
 
-#Blogs
+# Blogs
 🎉 If you like any of the posts, please share it on Twitter (<a href="https://twitter.com/rajaraodv">@rajaraodv</a>)🎉
 
 1. <a href="https://medium.com/@rajaraodv/step-by-step-guide-to-building-react-redux-apps-using-mocks-48ca0f47f9a#.s7zsgq3u1" target="_blank">Step by Step Guide To Building React Redux Apps</a>
@@ -22,12 +22,12 @@ https://protected-escarpment-79486.herokuapp.com/
 
 
 
-#Running On Heroku
+# Running On Heroku
 You can create your own version of the app (including MongoDB!)
 <br/>
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-#Local Installation
+# Local Installation
 1. Install <a href="https://nodejs.org" target="_blank">Node.js</a> 
 2. Install <a target="_blank" href="https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/#install-mongodb-community-edition-with-homebrew">MongoDB</a>
 3. `git clone https://github.com/rajaraodv/react-redux-blog.git`
@@ -38,14 +38,14 @@ You can create your own version of the app (including MongoDB!)
   * `export POSTMARK_API_TOKEN=<getApiTokenFromWInPostmark>`
   * Alternatively, you can run the app on Heroku, add Postmark addon (which adds a free account and sets `POSTMARK_API_TOKEN` to the app running on Heroku). You can then get that `POSTMARK_API_TOKEN` by running: `heroku config:get POSTMARK_API_TOKEN` and then export the token to the terminal. This will now allow you to send email from localhost.
 
-####Preventing Emails From Getting Blocked by GMail, Yahoo etc.
+#### Preventing Emails From Getting Blocked by GMail, Yahoo etc.
 NOTE: In order to send email via PostMark or Sendgrid, you need to verify sender's email(from address). In PostMark you can do that by setting your company or other private email(e.g. raja@rao.com) and verifying that. Then you can use **THAT** company or private email(e.g. raja@rao.com) in the FROM address.
 
 
-#Running Locally
+# Running Locally
 *You need two terminal windows open*, one for client and the other for server.
 
-####Development
+#### Development
 1. In terminal 1, 
 	1. `export JWT_SECRET=somesecretstring` <-- This is used to generate JWT tokens.
 	2. `export POSTMARK_API_TOKEN=<getApiTokenFromWInPostmark>` <-- Email
@@ -62,9 +62,9 @@ export NODE_ENV=development
 ```
 
 
-####Note: If you open `localhost:3000` in browser, you'll see a "stale" production app, so while in development, **always go to `localhost:8080`**
+#### Note: If you open `localhost:3000` in browser, you'll see a "stale" production app, so while in development, **always go to `localhost:8080`**
 
-####Production
+#### Production
 In production, we need to compile the **latest** client js and place it to `public` folder. This allows the main app server(Express) to also show the final app.
 
 1. Generate latest React app: `npm run build`.
@@ -73,7 +73,7 @@ In production, we need to compile the **latest** client js and place it to `publ
 
 
 
-#Cloning Locally And Pushing To Heroku
+# Cloning Locally And Pushing To Heroku
 Running your own instance on <a href="https://heroku.com">Heroku</a>.
 
 1. `git clone https://github.com/rajaraodv/react-redux-blog.git`
@@ -86,7 +86,7 @@ Running your own instance on <a href="https://heroku.com">Heroku</a>.
 8. `git push heroku master`
 
 
-###Making changes to your app and pushing it to Heroku
+### Making changes to your app and pushing it to Heroku
 Everytime you make changes to the front end, you need to build it, and do git commit before pushing it to Heroku test server.
 
 1. `npm run build` #build new React app JS
