@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "async": "^2.1.4",
-    "axios": "^0.17.1",
+    "axios": "^1.6.3",
     "babel-preset-stage-1": "^6.16.0",
     "bcrypt": "^1.0.3",
     "body-parser": "~1.18.2",
