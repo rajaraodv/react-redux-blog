@@ -23,7 +23,7 @@
     "async": "^2.1.4",
     "axios": "^0.17.1",
     "babel-preset-stage-1": "^6.16.0",
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^5.0.1",
     "body-parser": "~1.18.2",
     "compression": "^1.6.2",
     "compression-webpack-plugin": "^1.1.3",
