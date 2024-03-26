@@ -30,7 +30,7 @@
     "cookie-parser": "~1.4.3",
     "debug": "~3.1.0",
     "ejs": "^2.5.3",
-    "express": "~4.16.2",
+    "express": "~4.19.2",
     "express-jwt": "^5.1.0",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.1.0",
