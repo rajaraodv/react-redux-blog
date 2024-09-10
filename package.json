@@ -45,7 +45,7 @@
     "react-dom": "^16.2.0",
     "react-lite": "^0.15.28",
     "react-redux": "^5.0.6",
-    "react-router": "^4.2.0",
+    "react-router": "^6.0.0",
     "redux": "^3.6.0",
     "redux-form": "^7.2.0",
     "redux-logger": "^3.0.6",
